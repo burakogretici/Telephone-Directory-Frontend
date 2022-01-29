@@ -1,0 +1,138 @@
+<div class="container">
+<nav class="navbar navbar-light "style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <h1 style="color: black;">Customers</h1>
+    <div class="border">
+    <button  type="button" (click)="open(create)" class="btn btn-md btn-primary">  <i class="fa fa-user">New Customer</i></button>
+    </div>
+
+  </div>
+</nav>
+</div>
+<br>
+<div class="container">
+  <form class="form-inline ">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+</form> </div>
+<br>
+<div class="container">
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let customer of customers">
+    <tr>
+      <td>{{customer.id}}</td>
+      <td>{{customer.customerName}}</td>
+      <td>{{customer.customerPhoneNumber}}</td>
+      <td>{{customer.customerDescription}}</td>
+      <td>
+        <button class="btn btn-warning mx-3" (click)="open(update)">Edit</button>
+        <button class="btn btn-danger" (click)="open(delete)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<ng-template #create let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Create Customer</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #Customer="ngForm" (ngSubmit)="add(Customer)" novalidate>
+      <div class="form-group">
+        <label for="customerName" class="col-form-label">Name:</label>
+        <input  class="form-control" id="name" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="customerPhoneNumber" class="col-form-label">Telephone Phone:</label>
+        <input class="form-control" id="telephone-model" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="customerDescription" class="col-form-label">Description:</label>
+        <input class="form-control" id="description" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="customerBirthDate" class="col-form-label">Date of Birth:</label>
+        <input type="datetime" class="form-control" id="customerBirthDate" ngModel>
+      </div>
+
+      <div id="save" class="border text-center">
+        <button data-dismiss="modal" class="btn btn-outline-dark">Save</button>
+        </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="modal.close('Close click')">Close</button>
+
+  </div>
+</ng-template>
+
+
+<ng-template #update let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Update Customer</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #customer="ngForm" (ngSubmit)="add(customer)" novalidate>
+      <div class="form-group">
+        <label for="customerName" class="col-form-label">Name:</label>
+        <input  class="form-control" id="name" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="customerPhoneNumber" class="col-form-label">Telephone Phone:</label>
+        <input class="form-control" id="telephone-model" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="customerDescription" class="col-form-label">Description:</label>
+        <input class="form-control" id="description" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="customerBirthDate" class="col-form-label">Date of Birth:</label>
+        <input type="datetime" class="form-control" id="customerBirthDate" ngModel>
+      </div>
+
+      <div class="border text-center">
+        <button data-dismiss="modal" class="btn btn-outline-dark">Save</button>
+        </div>
+    </form>
+  </div>
+  <div class="modal-footer" >
+    <button type="button" class="btn btn-outline-danger" (click)="modal.close('Close click')">Cancel</button>
+
+  </div>
+</ng-template>
+
+
+<ng-template #delete let-modal>
+  <div class="modal-body">
+    <form novalidate>
+      <div class="form-group">
+        <label for="customerName" class="col-form-label">Bu kaydı silmek istiyor musunuz?</label>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-warning" (click)="modal.close('Close click')">Cancel</button>
+    <button type="button" class="btn btn-outline-danger" (click) ="modal.close('Close click')">Yes</button>
+
+  </div>
+</ng-template>
+
+
