@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![update](https://user-images.githubusercontent.com/74312392/151650095-812ea989-4624-4018-9da8-cf6323d174dc.PNG)
  
 ## Built With
-|<img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" alt="C#" width="38">| <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="asp.net" width="38"> |<img src="https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg" alt="PostgreSQL" width="52">width="52">
+|<img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" alt="C#" width="38">| <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="asp.net" width="38"> |<img src="https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg" alt="PostgreSQL" width="52">
 |---|---|---|
 ## Development server
 
