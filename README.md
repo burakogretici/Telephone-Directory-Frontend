@@ -9,8 +9,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![update](https://user-images.githubusercontent.com/74312392/151650095-812ea989-4624-4018-9da8-cf6323d174dc.PNG)
  
 ## Built With
-|<img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" alt="C#" width="38">| <img src="http://www.semihduran.com/wp-content/uploads/2014/12/asp_net.png" alt="asp.net" width="38"> |<img src="https://www.turkiyeacikkaynakplatformu.com/wp-content/uploads/2021/04/postgresql-hover.jpg" alt="PostgreSQL" width="52">|<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_n08xRSb_t7hRRhsEujN4Xbn0ctYfBUZ-qg&usqp=CAU" alt="Java" width="56">|<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="jQuery" width="36">|<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0mRZI6MD42MOkJUIA1GUgRmqk7-7pFCgRmgmS27iWa87AxSn8-_g6nMH18lITZMKsFk&usqp=CAU" alt="mongodb" width="52">
-|---|---|---|---|---|---|
+|<img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" alt="C#" width="38">| <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="asp.net" width="38"> |<img src="https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg" alt="PostgreSQL" width="52">width="52">
+|---|---|---|
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
